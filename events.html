@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>Adding event Listener to a button html element.</h2>
+		<button id = "myBtn" onclick="handleClick()">Click Me</button>
+
+
+		<script>
+			var counter = 0;
+			function handleClick(){
+				counter++;
+				document.getElementById('myBtn').innerHTML = counter;
+			}
+		</script>
+	</body>
+
+</html>

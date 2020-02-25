@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Handling Keypress Events</title>
+</head>
+<body>
+	<h2>Key Pressed: </h2>
+	<p id="text"></p>
+
+	<script>
+		document.onkeypress = handleKeyPress;
+		function handleKeyPress(event){
+			var keyPressed = event.key;
+			document.getElementById('text').innerHTML = keyPressed;
+		}
+	</script>
+</body>
+</html>>
